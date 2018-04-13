@@ -1,0 +1,2 @@
+1. beanfactory是个工厂，用于生产实例的bean。而factorybean是个bean。一个能生产和修饰对象
+生成的工厂bean

@@ -1,0 +1,1 @@
+1. 将session用缓存集群保存起来。并且用sessionid来获取session

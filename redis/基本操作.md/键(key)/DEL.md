@@ -1,0 +1,7 @@
+# demo
+
+```sql
+
+DEL <keyname>
+
+```

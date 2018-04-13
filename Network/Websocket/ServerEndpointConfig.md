@@ -1,0 +1,5 @@
+# ServerEndpointConfig
+
+EndpointConfig 表示的是与多个客户端共享的断电状态的关联，ServerEndpointConfig 是它的一个子类，表示服务端用的 EndpointConfig
+
+WebSocket 只会为所有的端点实现一个 ServerEnpointConfig 对象，所以可以用 ServerEndpointConfig 来存放端点客户端的数据，例如登录信息

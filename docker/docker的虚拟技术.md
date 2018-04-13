@@ -1,0 +1,1 @@
+docker是基于lxc的容器引擎。只能虚拟linux 系统。不能虚拟windows系统

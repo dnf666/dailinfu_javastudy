@@ -1,0 +1,12 @@
+同步阻塞的BIO、同步非阻塞的NIO、异步非阻塞的AIO
+
+
+bio存在大并发问题，因为每个线程都要等待服务端响应，并发量大的话还可能使服务器宕机
+
+而nio就是解决bio的大并发问题。每个客户端都有一个socket连接对应一个socketchannel。每个socketchannel都注册（通过register方法。给selector一个selectionkey对象）
+在一个唯一的selector。每个selector 对应多个channel ，服务端只用一个selector或者多个selector做处理连接。
+selector不断获取select方法的值。值是selectkey的数目。如果selectkey大于0.说明有channel需要处理。则selector对channel的请求存在bytebuffer中处理
+selector处理后返回数据到bytebuffer中。异步读给客户端
+
+
+aio是nio2.0版本。在jdk1.7的时候，sun公司将nio的select/poll模型改为了select/epoll模型。真正地实现了异步非阻塞
