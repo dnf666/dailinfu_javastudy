@@ -1,0 +1,2 @@
+finalize方法会非常的消耗性能。
+还不如用try catch finally代替

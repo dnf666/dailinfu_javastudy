@@ -1,0 +1,2 @@
+1. 因为很多集合类会比较hashcode和equals。如果只修改了equals。但是hashcode没有修改
+则equals相等。hashcode必定不等。所以将导致集合用不了
